@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<title>A quick tour of ten dimensions</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+		<link href='base.css' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+		<style>
+			body {
+				background-color: #f7d700;
+			}
+
+			#split {
+				position: absolute;
+				top: 790px;
+				left: 190px;
+				padding: 30px;
+
+			}
+			#splitend {
+				position: absolute;
+				top: 1500px;
+				left: 190px;
+				padding: 30px;
+
+			}
+			#fold {
+				position: absolute;
+				top: 1600px;
+				left: 260px;
+				padding: 30px;
+				text-align: right;
+
+			}
+			#continue2 {
+				position: absolute;
+				top: 1790px;
+				left: 220px;
+				padding: 30px;
+
+			}
+			#split2 {
+				position: absolute;
+				top: 1790px;
+				left: 80px;
+				padding: 30px;
+
+			}
+			#splitend2 {
+				position: absolute;
+				top: 2400px;
+				left: 85px;
+				padding: 30px;
+
+			}
+			#fold2 {
+				position: absolute;
+				top: 2500px;
+				left: 65px;
+				padding: 30px;
+				text-align: left;
+
+			}
+			#continue {
+				position: absolute;
+				top: 790px;
+				left: 60px;
+				padding: 30px;
+
+			}
+
+		</style>
+	</head>
+
+	<body>
+		<script src="scroll.js"></script>
+		<br><br><li><a id="top" href="#split">forward</a></li>
+		<li><a id="split" href="#splitend">split</a></li>
+		<li><a id ="continue" href="#continue2">forward</a></li>
+		<li><a id="splitend" href="#split">back</a></li>
+		<li><a id="fold" href="#splitend2">fold<br>forward</a></li>
+		<br><br><li><a id="continue2" href="#bottom">forward</a></li>
+		<li><a id="split2" href="#splitend2">split</a></li>
+		<li><a id="fold2" href="#bottom">fold<br>forward</a></li>
+		<li><a id="splitend2" href="#splitend">back</a></li>
+
+		<img src="img/6.png">
+		<li><a id="bottom" href="#top">back</a></li><br><br>
+		<li><a id="foldback" href="#splitend2">fold back</a></li><br><br>
+
+		<div class="backbutton" onclick="location.href='index.html';"> < </div>
+
+
+	</body>
+</html>

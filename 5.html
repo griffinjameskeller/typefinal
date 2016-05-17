@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<title>A quick tour of ten dimensions</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+		<link href='base.css' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+		<style>
+			body {
+				background-color: #d6007f;
+			}
+
+			#split {
+				position: absolute;
+				top: 860px;
+				left: 190px;
+				padding: 30px;
+			}
+			#splitend {
+				position: absolute;
+				top: 1420px;
+				left: 190px;
+				padding: 30px;
+			}
+			#continue {
+				position: absolute;
+				top: 860px;
+				left: 60px;
+				padding: 30px;
+			}
+			#split2 {
+				position: absolute;
+				top: 1860px;
+				left: 60px;
+				padding: 30px;
+			}
+			#splitend2 {
+				position: absolute;
+				top: 2450px;
+				left: 85px;
+				padding: 30px;
+			}
+			#continue2 {
+				position: absolute;
+				top: 1860px;
+				left: 190px;
+				padding: 30px;
+			}
+
+		</style>
+	</head>
+
+	<body>
+		<script src="scroll.js"></script>
+		<br><br><li><a id="top" href="#split">forward</a></li>
+		<li><a id="split" href="#splitend">split</a></li>
+		<li><a id ="continue" href="#split2">forward</a></li>
+		<li><a id="splitend" href="#split">back</a></li>
+		<li><a id="splitend2" href="#split2">back</a></li>
+		<li><a id="split2" href="#splitend2">split</a></li>
+		<li><a id ="continue2" href="#bottom">forward</a></li>
+		<img src="img/5.png">
+		<li><a id="bottom" href="#top">back</a></li><br><br>
+
+		<div class="backbutton" onclick="location.href='index.html';"> < </div>
+
+
+	</body>
+</html>
